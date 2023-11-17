@@ -1,0 +1,98 @@
+
+.横並びA {
+	display: flex;/* 横並び */
+	
+	justify-content: space-between;/* 各列の間に隙間を開ける */
+	
+	& .列 {
+		background-color: orange;
+		
+		width: 120px;/* 列の幅を指定（120px） */
+	}
+}
+
+.横並びB {
+	display: flex;
+	
+	justify-content: space-between;
+	
+	& .広い列 {
+		background-color: lightblue;
+		
+		width: 240px;
+	}
+	
+	& .狭い列 {
+		background-color: lightgreen;
+		
+		width: 120px;
+	}
+	
+}
+
+.横並びC {
+	display: flex;/* 横並び */
+	
+	justify-content: space-between;/* 各列の間に隙間を開ける */
+	
+	& .列 {
+		background-color: pink;
+		
+		width: 120px;/* 列の幅を指定（120px） */
+	}
+}
+
+.横並びD {
+	display: flex;/* 横並び */
+	
+	justify-content: center;
+	/* ↑ 列全体を中央に寄せる。だが、ピッタリくっつくと見づらい */
+	/* ↓ ので、列同士の間隔を空ける */
+	gap: 20px;
+	
+	& .列 {
+		background-color: red;
+		
+		width: 120px;/* 列の幅を指定（120px） */
+	}
+}
+/* --------------------------------------------- */
+
+.演習2 {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px 10px 10px 10px;
+	
+	& .画像{
+		display: block;
+		width: 100%;
+	}	
+	
+	& .見出し{
+		font-weight: bold;
+		font-size: 20px;
+		width: 100px;
+	}
+	& .文章{
+		font-size: 12px;
+		width: 100px;
+	}
+	& .イヌ{
+		border: 1px solid black;
+		width: 100px;
+		padding: 10px 10px 10px 10px;
+	}
+	& .ヤク{
+		border: 1px solid black;
+		width: 100px;
+		padding: 10px 10px 10px 10px;
+	}
+	& .キツネ{
+		border: 1px solid black;
+		width: 100px;
+		padding: 10px 10px 10px 10px;
+	}	
+} 
+
+
