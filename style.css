@@ -1,98 +1,84 @@
 
 .横並びA {
-	display: flex;/* 横並び */
+	/* 横並び */
+	display: flex;
 	
-	justify-content: space-between;/* 各列の間に隙間を開ける */
+	/* 各列の間に隙間を空ける */
+	justify-content: space-between;
 	
 	& .列 {
 		background-color: orange;
 		
-		width: 120px;/* 列の幅を指定（120px） */
+		/* 幅 120px */
+		width: 120px;
 	}
 }
 
 .横並びB {
 	display: flex;
 	
+	/* 各列の間に隙間を空ける */
 	justify-content: space-between;
 	
 	& .広い列 {
 		background-color: lightblue;
-		
 		width: 240px;
 	}
 	
 	& .狭い列 {
 		background-color: lightgreen;
-		
 		width: 120px;
 	}
-	
 }
 
 .横並びC {
-	display: flex;/* 横並び */
-	
-	justify-content: space-between;/* 各列の間に隙間を開ける */
+	display: flex;
+	justify-content: space-between;
 	
 	& .列 {
 		background-color: pink;
-		
-		width: 120px;/* 列の幅を指定（120px） */
+		width: 120px;
 	}
 }
 
 .横並びD {
-	display: flex;/* 横並び */
+	display: flex;
 	
+	/* 列全体を中央に寄せつつ、 */
 	justify-content: center;
-	/* ↑ 列全体を中央に寄せる。だが、ピッタリくっつくと見づらい */
-	/* ↓ ので、列同士の間隔を空ける */
+	
+	/* 列同士の間隔を空ける */
 	gap: 20px;
 	
 	& .列 {
 		background-color: red;
-		
-		width: 120px;/* 列の幅を指定（120px） */
+		width: 120px;
 	}
 }
-/* --------------------------------------------- */
 
-.演習2 {
+
+/* * * 演習② * * */
+.動物横並び {
 	display: flex;
-	justify-content: center;
-	gap: 10px;
-	padding: 10px 10px 10px 10px;
+	justify-content: space-between;
 	
-	& .画像{
-		display: block;
-		width: 100%;
-	}	
-	
-	& .見出し{
-		font-weight: bold;
-		font-size: 20px;
+	& .動物 {
 		width: 100px;
-	}
-	& .文章{
-		font-size: 12px;
-		width: 100px;
-	}
-	& .イヌ{
 		border: 1px solid black;
-		width: 100px;
 		padding: 10px 10px 10px 10px;
-	}
-	& .ヤク{
-		border: 1px solid black;
-		width: 100px;
-		padding: 10px 10px 10px 10px;
-	}
-	& .キツネ{
-		border: 1px solid black;
-		width: 100px;
-		padding: 10px 10px 10px 10px;
-	}	
-} 
+		
+		& .動物画像 {
+			width: 100%;
+		}
 
+		& .動物名 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		& .説明文 {
+			font-size: 12px;
+		}
+	}
+}
 
